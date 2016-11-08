@@ -1,0 +1,17 @@
+Nginx：
+	ps -ef |grep nginx 可以查看主进程和工作进程
+	root      2445     1  0 08:06 ?        00:00:00 nginx: master process /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+	www       2508  2445  0 08:09 ?        00:00:00 nginx: worker process                                          
+	www       2509  2445  0 08:09 ?        00:00:00 nginx: worker process                                          
+	root      2511  2308  0 08:09 pts/0    00:00:00 grep nginx
+2.nginx -s signal
+	quit – Shut down gracefully 
+	reload – Reload the configuration file 
+	reopen – Reopen log files 
+	stop – Shut down immediately (fast shutdown) 
+3.The kill utility can also be used，to send a signal directly to the master process.The process ID of the master process is written, by default, to the nginx.pid file, which is located in the /usr/local/nginx/logs or /var/run directory.
+4.
+
+
+
+
